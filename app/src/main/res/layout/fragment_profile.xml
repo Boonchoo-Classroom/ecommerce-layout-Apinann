@@ -1,14 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.ProfileFragment">
+    android:background="#FFFFFF"
+    tools:context=".ui.Profile.ProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="User Avatar"
+            android:src="@mipmap/ic_launcher_logoapp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Firstname : Adama"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lastname:Traole"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: srithanya@srithanya.go.th."
+            android:textSize="18dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address: 22 ถ. นนทบุรี 1 ตำบลสวนใหญ่ อำเภอเมืองนนทบุรี นนทบุรี 11000"
+            android:textSize="18dp"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_fixprofile"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Profile Fragement" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="แก้ไข"
+        android:backgroundTint="@drawable/button_color0_2"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
 
 </FrameLayout>

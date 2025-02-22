@@ -1,14 +1,255 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.ProductFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Product Fragement" />
+        android:gravity="start"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="🌟Product Category🌟"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_color3"
+            android:backgroundTint="@android:color/transparent"
+            android:gravity="start"
+            android:padding="8dp"
+            android:text="Kitchenware"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_color3"
+            android:gravity="start"
+            android:padding="8dp"
+            android:text="Desktop items"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_color3"
+            android:gravity="start"
+            android:padding="8dp"
+            android:text="Garden"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_color3"
+            android:gravity="start"
+            android:padding="8dp"
+            android:text="Furniture"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_color3"
+            android:gravity="start"
+            android:padding="8dp"
+            android:text="Glass"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="🌟Product🌟"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp">
+
+            <!-- สินค้า4 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:backgroundTint="#15000000"
+                android:background="@drawable/grop"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="110dp"
+                    android:layout_height="114dp"
+                    android:src="@drawable/ssoomm"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/product_name4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Somso"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/product_price4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="฿500"
+                    android:textColor="#4CAF50"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_add_to_cart1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Add to Cart"
+                    android:textSize="8.8sp"
+                    android:backgroundTint="@drawable/button_color"
+                    android:drawableLeft="@drawable/ic_cart2"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"/>
+            </LinearLayout>
+
+            <!-- สินค้า 5 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:backgroundTint="#15000000"
+                android:background="@drawable/grop"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="110dp"
+                    android:layout_height="114dp"
+                    android:src="@drawable/jeaaa"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/product_name5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Jeaaa"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/product_price5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="฿600"
+                    android:textColor="#4CAF50"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_add_to_cart2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8.8dp"
+                    android:text="Add to Cart"
+                    android:textSize="8sp"
+                    android:backgroundTint="@drawable/button_color"
+                    android:drawableLeft="@drawable/ic_cart2"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"/>
+            </LinearLayout>
+
+            <!-- สินค้า 6 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:backgroundTint="#15000000"
+                android:background="@drawable/grop"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="110dp"
+                    android:layout_height="114dp"
+                    android:src="@drawable/somso"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/product_name6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Somsoo"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/product_price6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="฿700"
+                    android:textColor="#4CAF50"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_add_to_cart3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8.8dp"
+                    android:text="Add to Cart"
+                    android:textSize="8sp"
+                    android:backgroundTint="@drawable/button_color"
+                    android:drawableLeft="@drawable/ic_cart2"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
